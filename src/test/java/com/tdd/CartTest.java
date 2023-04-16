@@ -7,6 +7,8 @@ import org.junit.Test;
 
 public class CartTest {
 
+    //Given that I a new shopper, when I begin shopping, then I expect my cart to be empty.
+
     @Test
     public void emptycart(){
         //Setup
@@ -17,6 +19,9 @@ public class CartTest {
         //assert
         assertEquals(items, item);
     }
+
+  
+
 }
 
    
