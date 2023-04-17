@@ -7,8 +7,7 @@ import org.junit.Test;
 
 public class CartTest {
 
-    //Given that I a new shopper, when I begin shopping, then I expect my cart to be empty.
-
+    //Test Case 1: Given that I a new shopper, when I begin shopping, then I expect my cart to be empty.
     @Test
     public void emptycart(){
         //Setup
@@ -20,6 +19,7 @@ public class CartTest {
         assertEquals(items, item);
     }
 
+    //Test Case 2: 
     @Test
     public void SumOfItems(){
         //Setup
@@ -35,6 +35,7 @@ public class CartTest {
         assertEquals(items, sum);
     }
 
+    //Test 3:
     @Test
     public void SumOfQty(){
         //Setup

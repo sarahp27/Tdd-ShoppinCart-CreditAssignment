@@ -34,4 +34,12 @@ public class Cart {
         }
         return sum;
     }
+
+    public int getQtyUpdate(){
+        int Qty=0;
+        for (Cart cart2 : cart) {
+            Qty+=cart2.qty;            
+        }
+        return Qty;
+    }
 }
