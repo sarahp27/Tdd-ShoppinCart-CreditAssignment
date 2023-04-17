@@ -43,6 +43,8 @@ Tips
 Establish rapport with your pair!
 Establish when you'll swap roles (ping pong)
 Take breaks at least once an hour.
+
+
 Acceptance Criteria:
 Ali Snobba has given you the following criteria to determine completeness of your project. Note that there are no code implementation details. So you must collaborate with your partner on how best to implement the application.
 
