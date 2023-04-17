@@ -51,7 +51,22 @@ public class CartTest {
         assertEquals(Qty, sum);
     }
 
-  
+    //Test Case 4:
+    @Test
+    public void PriceAndQty(){
+        //Setup
+        int Qty=2;
+        //
+        Cart cart1=new Cart("Meezan Oil",700,2);
+        Cart cart2=new Cart("Meezan Oil",700,1);
+        Cart cart=new Cart();
+        cart.add(cart1);
+        cart.add(cart2);
+        int sum=cart.getPriceAndQty();
+        //Asset
+        assertEquals(Qty, sum);
+
+    }
 
 }
 
