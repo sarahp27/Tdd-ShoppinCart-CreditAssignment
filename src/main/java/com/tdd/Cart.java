@@ -23,4 +23,15 @@ public class Cart {
     public int getItem() {
         return cart.size();
     }
+    public void add(Cart cart1) {
+        cart.add(cart1);
+    }
+
+    public int getTotalSum(){
+        int sum=0;
+        for (Cart cart2 : cart) {
+            sum+=cart2.price;            
+        }
+        return sum;
+    }
 }
