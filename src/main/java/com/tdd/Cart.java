@@ -50,6 +50,10 @@ public class Cart {
     public void addItem(ItemSale item) {
         items.add(item);
     }
+
+    public void removeItem(String item_name) {
+        cart.removeAll(items);
+    }
     
 
 }
