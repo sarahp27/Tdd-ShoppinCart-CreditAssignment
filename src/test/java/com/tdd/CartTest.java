@@ -79,6 +79,17 @@ public class CartTest {
         assertEquals(saleItems, sale);
     }
 
+    @Test
+    public void UpdatedList(){
+        int list=0;
+        ItemSale item1 = new ItemSale("Meezan oil", 400, 4,true);
+        Cart cart=new Cart();
+        cart.addItem(item1);
+        cart.removeItem("Meezan Oil");
+        int result=cart.getItem();
+        assertEquals(list,result);        
+    }
+
 
 }
 
