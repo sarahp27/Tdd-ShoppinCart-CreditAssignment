@@ -68,6 +68,18 @@ public class CartTest {
 
     }
 
+    @Test
+    public void ItemOnSale(){
+        boolean sale=true;
+        Cart cart=new Cart();
+        ItemSale item1 = new ItemSale("Meezan oil", 400,4, true);
+        ItemSale item=new ItemSale();
+        cart.addItem(item1);
+        boolean saleItems=item.onSale();
+        assertEquals(saleItems, sale);
+    }
+
+
 }
 
    
