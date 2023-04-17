@@ -42,4 +42,8 @@ public class Cart {
         }
         return Qty;
     }
+
+    public int getPriceAndQty(){
+        return cart.size();
+    }
 }
