@@ -47,4 +47,9 @@ public class Cart {
         return cart.size();
     }
 
+    public void addItem(ItemSale item) {
+        items.add(item);
+    }
+    
+
 }
