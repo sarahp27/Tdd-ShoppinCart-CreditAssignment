@@ -90,6 +90,18 @@ public class CartTest {
         assertEquals(list,result);        
     }
 
+    @Test
+    public void RemoveQty(){
+        int list=0;
+        ItemSale item1 = new ItemSale("Meezan oil", 400, 4,true);
+        Cart cart=new Cart();
+        cart.addItem(item1);
+        cart.removeQty(1);
+        int result=cart.getQtyUpdate();
+        assertEquals(list,result);
+
+    }
+
 
 }
 
