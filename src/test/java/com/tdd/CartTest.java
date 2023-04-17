@@ -19,7 +19,8 @@ public class CartTest {
         assertEquals(items, item);
     }
 
-    //Test Case 2: 
+    //Test Case 2: Given I have an empty cart, when I add an Item, then
+    // I expect to the price reflect the sum of all the Items in my cart.
     @Test
     public void SumOfItems(){
         //Setup
@@ -35,7 +36,8 @@ public class CartTest {
         assertEquals(items, sum);
     }
 
-    //Test 3:
+    //Test 3:Given I have cart with one item, when I add more of that item, 
+    //then I expect to see its quantity update on the cart.
     @Test
     public void SumOfQty(){
         //Setup
@@ -51,7 +53,8 @@ public class CartTest {
         assertEquals(Qty, sum);
     }
 
-    //Test Case 4:
+    //Test Case 4:Given I have an empty cart, when I add items, 
+    //then I expect it to see an itemized list of the items along with their price and quantity.
     @Test
     public void PriceAndQty(){
         //Setup
@@ -68,6 +71,8 @@ public class CartTest {
 
     }
 
+    //Test Case 5: Given I have a cart with items that are not on sale,
+    // when I add an item that's on sale, I expect to see it highlighted.
     @Test
     public void ItemOnSale(){
         boolean sale=true;
@@ -79,6 +84,8 @@ public class CartTest {
         assertEquals(saleItems, sale);
     }
 
+    //Test case 6:Given I have a cart with items, when I remove an item, 
+    //then I expect the cart to display the updated itemized list.
     @Test
     public void UpdatedList(){
         int list=0;
@@ -90,6 +97,8 @@ public class CartTest {
         assertEquals(list,result);        
     }
 
+    //Test Case 7:Given I have one item in my cart with a quantity of 3, when I remove one, 
+    //then I expect the cart to have 2 of that item.
     @Test
     public void RemoveQty(){
         int list=0;

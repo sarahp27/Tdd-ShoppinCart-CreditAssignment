@@ -54,6 +54,16 @@ public class Cart {
     public void removeItem(String item_name) {
         cart.removeAll(items);
     }
+
+    
+    public int removeQty(int Qty){
+        for(int i=0; i<cart.size();i++){
+            if(cart.get(i).equals(qty)){
+                cart.remove(i-1);
+            }
+        }
+        return cart.size();
+    }
     
 
 }
